@@ -11,5 +11,6 @@ public class Main {
 
         companyManager.addTemporaryEmployee("Eshmad", "Eshmatov", 100d, "Work1", 5);
 
+        companyManager.printAllEmployeeDetail();
     }
 }

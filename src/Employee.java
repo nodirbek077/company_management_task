@@ -1,12 +1,10 @@
 public class Employee {
-    private Integer id;
     private String name;
     private String surname;
     private Double salary;
     private String work;
 
-    public Employee(Integer id, String name, String surname, Double salary, String work) {
-        this.id = id;
+    public Employee(String name, String surname, Double salary, String work) {
         this.name = name;
         this.surname = surname;
         this.salary = salary;
@@ -14,7 +12,7 @@ public class Employee {
     }
 
     public String getDetail() {
-        return null;
+        return name + " " + surname + " " + salary + " " + work;
     }
 
     public String getEmployeeType() {
@@ -44,4 +42,45 @@ public class Employee {
     /**
      * get / set
      */
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getSurname() {
+        return surname;
+    }
+
+    public void setSurname(String surname) {
+        this.surname = surname;
+    }
+
+    public Double getSalary() {
+        return salary;
+    }
+
+    public void setSalary(Double salary) {
+        this.salary = salary;
+    }
+
+    public String getWork() {
+        return work;
+    }
+
+    public void setWork(String work) {
+        this.work = work;
+    }
+
+   /* @Override
+    public String toString() {
+        return "Employee{" +
+                "name='" + name + '\'' +
+                ", surname='" + surname + '\'' +
+                ", salary=" + salary +
+                ", work='" + work + '\'' +
+                '}';
+    }*/
 }
