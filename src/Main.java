@@ -11,6 +11,15 @@ public class Main {
 
         companyManager.addTemporaryEmployee("Eshmad", "Eshmatov", 100d, "Work1", 5);
 
-        companyManager.printAllEmployeeDetail();
+        companyManager.addPartnerEmployee("Chang", "Changov", 200d, "Work2", "asia");
+        companyManager.addEarEmployee("Quloq", "Quloqov", 100d, "Work4");
+
+//        companyManager.printAllEmployeeDetail();
+
+        companyManager.printAllEmployeeType();
+//        companyManager.showAllEmployeeBonus();
+//        companyManager.showAllPensionTax();
+//        companyManager.showAllInsuranceTax();
+//        companyManager.showAllSalaryAfterAllTaxes();
     }
 }

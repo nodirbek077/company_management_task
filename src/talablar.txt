@@ -19,20 +19,20 @@ TemporaryEmployee - vaqtinchalik
                                 Vali + Valiyev + Permanent
                                 Axmad + Axmadov + Seasonal
 6. showAllEmployeeBonus metod ishchilar oladigan bonuslarni hisoblab konsolga chiqaradi.
-            Bunda ishchilanring oyligini qanchadir foizi bonus hisoblanadi. (Permanent-50,Seasonal-20,Temporary-0)
+            Bunda ishchilanring oyligini qanchadir foizi bonus hisoblanadi. (Permanent-50%,Seasonal-20%,Temporary-0%)
             Namuna:
                 Ali ALiyev  - 100
                 Valie Valiyev 200
 
 
 7. showAllPensionTax metod ishchilardan olib qolinadigan pensiya miqdorini chiqaradi.
-            (Permanent-7.5%, Seasonal-6.5%,Temporary-0)
+            (Permanent-7.5%, Seasonal-6.5%,Temporary-0%)
              Namuna:
                 Ali aliyev  - 750
                 Vali Valiyev - 500
 
 8. showAllInsuranceTax  metod barcha ishchilar uchun sug'urta miqdorini konsolga chiqaradi.
-                (Permanent-1%,Seasonal-0.5%,Temporary-0)
+                (Permanent-1%,Seasonal-0.5%,Temporary-0%)
                 Namuna:
                     Ali aliyev  - 10
                     Vali Valiyev - 5

@@ -1,8 +1,11 @@
-public class Employee {
+public abstract class Employee {//endi ushbu classni abstract class qilib bolalari override qilishini majburlab qo'yamiz
     private String name;
     private String surname;
     private Double salary;
     private String work;
+
+    public Employee() {
+    }
 
     public Employee(String name, String surname, Double salary, String work) {
         this.name = name;
@@ -15,28 +18,41 @@ public class Employee {
         return name + " " + surname + " " + salary + " " + work;
     }
 
-    public String getEmployeeType() {
-        return "Employee";
-    }
+//    public String getEmployeeType() {
+//        return "Employee";
+//    }
 
-    public Double getOneTimeBonus() {
+    public abstract String getEmployeeType();
+
+    //endi buni abstract class qilib bolalari override qilishini majburlab qo'yamiz
+    /*public Double getOneTimeBonus() {
         return 0.0; // in dollar
     }
+*/
+    public abstract Double getOneTimeBonus();
 
     public Double getHolidayBonus() {
         return 0.0;
     }
 
-    public Double calculatePensionTax() {
-        return 0.0;
-    } // 7,5%
+//    public Double calculatePensionTax() {
+//        return 0.0;
+//    } // 7,5%
+//
+//    public Double calculateInsuranceTax() {
+//        return 0.0;
+//    } // 0.1%.
+//
+//    public Double calculateSalaryAfterAllTaxes() {
+//        return salary + getOneTimeBonus() - (calculatePensionTax() + calculateInsuranceTax());
+//    }
 
-    public Double calculateInsuranceTax() {
-        return 0.0;
-    } // 0.1%.
+    public abstract Double calculatePensionTax();
+
+    public abstract Double calculateInsuranceTax();
 
     public Double calculateSalaryAfterAllTaxes() {
-        return 0.0;
+        return salary + getOneTimeBonus() - (calculatePensionTax() + calculateInsuranceTax());
     }
 
     /**
